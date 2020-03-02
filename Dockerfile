@@ -1,7 +1,7 @@
 FROM centos:7
 
-ENV NGINX_VERSION=1.17.8
-ENV NGX_MRUBY_VERSION=2.2.0
+ARG NGINX_VERSION=1.17.8
+ARG NGX_MRUBY_VERSION=2.2.0
 
 RUN yum -y groupinstall "Development Tools" \
  && yum install -y \
