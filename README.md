@@ -1,6 +1,6 @@
 # ngx\_mruby-module-builder
 
-Build ngx\_mruby dynamic module for CentOS.
+Build [ngx\_mruby](https://ngx.mruby.org/) dynamic module for CentOS.
 
 ## Usage
 
