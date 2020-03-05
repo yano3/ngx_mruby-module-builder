@@ -3,6 +3,8 @@ FROM centos:7
 ARG NGINX_VERSION=1.17.8
 ARG NGX_MRUBY_VERSION=2.2.0
 
+COPY build_config.rb /tmp/
+
 RUN yum -y groupinstall "Development Tools" \
  && yum install -y \
     openssl-devel \
@@ -13,6 +15,7 @@ RUN yum -y groupinstall "Development Tools" \
  && curl -s -OL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz && tar -xf nginx-$NGINX_VERSION.tar.gz \
  \
  && cd /usr/local/src/ngx_mruby \
+ && cp /tmp/build_config.rb . \
  && ./configure --enable-dynamic-module --with-ngx-src-root=../nginx-$NGINX_VERSION \
  && make build_mruby \
  && make generate_gems_config_dynamic \
