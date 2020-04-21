@@ -12,8 +12,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    matrix:
-      nginx_version: [1.17.8, 1.16.1]
+    strategy:
+      matrix:
+        nginx_version: [1.17.8, 1.16.1]
 
     steps:
     - uses: actions/checkout@v2
