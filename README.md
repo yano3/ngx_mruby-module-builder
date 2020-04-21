@@ -22,7 +22,7 @@ ndk_http_module.so              ngx_http_mruby_module.so
 You can specify versions of nginx and ngx\_mruby with make arguments.
 
 ```
-$ make NGINX_VERSION:=1.17.8 NGX_MRUBY_VERSION:=2.2.1
+$ make NGINX_VERSION:=1.17.10 NGX_MRUBY_VERSION:=2.2.1
 ```
 
 ### Customize build\_config.rb
