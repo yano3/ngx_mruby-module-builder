@@ -1,7 +1,7 @@
 FROM centos:7
 
 ARG NGINX_VERSION=1.17.8
-ARG NGX_MRUBY_VERSION=2.2.0
+ARG NGX_MRUBY_VERSION=2.2.1
 
 COPY build_config.rb /tmp/
 
