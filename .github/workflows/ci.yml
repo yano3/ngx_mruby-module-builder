@@ -19,4 +19,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build module
-      run: make NGINX_VERSION:=${{matrix.nginx_version}}
+      run: make NGINX_VERSION:=${{ matrix.nginx_version }}
