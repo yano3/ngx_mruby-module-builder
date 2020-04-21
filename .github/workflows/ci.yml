@@ -12,7 +12,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    matrix:
+      nginx_version: [1.17.8, 1.16.1]
+
     steps:
     - uses: actions/checkout@v2
     - name: Build module
-      run: make
+      run: make NGINX_VERSION:=${{nginx_version}}
