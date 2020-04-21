@@ -1,0 +1,22 @@
+name: Build Module CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        nginx_version: [1.17.8, 1.16.1]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build module
+      run: make NGINX_VERSION:=${{matrix.nginx_version}}
