@@ -1,5 +1,7 @@
 # ngx\_mruby-module-builder
 
+[![Build Module CI](https://github.com/yano3/ngx_mruby-module-builder/workflows/Build%20Module%20CI/badge.svg)](https://github.com/yano3/ngx_mruby-module-builder/actions)
+
 Build [ngx\_mruby](https://ngx.mruby.org/) dynamic module for CentOS.
 
 ## Usage
