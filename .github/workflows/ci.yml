@@ -17,6 +17,6 @@ jobs:
         nginx_version: [1.16.1, 1.18.0, 1.20.1, 1.21.1]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Build module
       run: make NGINX_VERSION:=${{ matrix.nginx_version }}
