@@ -1,4 +1,4 @@
-NGINX_VERSION := 1.21.1
+NGINX_VERSION := 1.23.1
 NGX_MRUBY_VERSION := 2.2.5
 
 all: build cp
